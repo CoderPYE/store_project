@@ -1,0 +1,15 @@
+H, minute = input().split()
+n = int(input())
+
+h = int(H)
+m = int(minute)
+
+m = m+n
+mh = m // 60  # 60분 이상 초과되는 값을 숫자로 변환 ex) 120 == 2
+if m >= 60:
+    m = m % 60
+    h = h+mh
+    if h >= 24:
+        h = h % 24
+
+print(h,m)
