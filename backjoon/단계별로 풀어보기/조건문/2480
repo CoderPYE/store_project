@@ -1,0 +1,19 @@
+a, b, c = input().split()
+
+da = int(a)
+db = int(b)
+dc = int(c)
+
+if da == db == dc:
+    print(10000+(da*1000))
+elif da == db or da == dc:
+    print(1000+(da*100))
+elif db == dc:
+    print(1000+(db*100))
+elif da != db != dc:
+    if da > db and da > dc:
+        print(da * 100)
+    elif db > da and db > dc:
+        print(db * 100)
+    elif dc > da and dc > db:
+        print(dc * 100)
