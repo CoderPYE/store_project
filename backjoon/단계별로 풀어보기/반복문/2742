@@ -1,0 +1,6 @@
+num = int(input())
+
+for i in range(num):
+    temp = num + 1
+    temp = temp - (i+1)
+    print(temp)
