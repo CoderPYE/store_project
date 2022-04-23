@@ -1,0 +1,7 @@
+num = int(input())
+
+tmp = num - 1
+for i in range(num):
+    print(" " * tmp, end="")
+    print("*" * (i+1))
+    tmp -= 1
