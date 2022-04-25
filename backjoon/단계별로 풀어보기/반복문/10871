@@ -1,6 +1,15 @@
+# 1
 num, max_num = map(int, input().split())
 
 input_num = list(map(int, input().split()))
+for i in range(num):
+    if input_num[i] < max_num:
+        print(input_num[i], end=" ")
+# 2
+import sys
+num, max_num = map(int, sys.stdin.readline().split())
+
+input_num = list(map(int, sys.stdin.readline().split()))
 for i in range(num):
     if input_num[i] < max_num:
         print(input_num[i], end=" ")
