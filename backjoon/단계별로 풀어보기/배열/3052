@@ -1,0 +1,9 @@
+num_list =[]
+
+for i in range(10):
+    a = int(input())
+    a = a % 42
+    num_list.append(a)
+
+num_list = list(set(num_list))
+print(len(num_list))
