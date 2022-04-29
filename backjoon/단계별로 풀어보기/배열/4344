@@ -1,0 +1,19 @@
+num = int(input())   # 전체 횟수
+
+for i in range(num):
+    score_list = list(map(int, input().split()))
+    del score_list[0]
+
+    student = len(score_list)
+    
+    avg = sum(score_list) / student   # 성적 평균 구하기
+    high_avg = 0
+
+    for k in range(student):
+        if score_list[k] > avg:   # 평균보다 큰 사람 숫자
+            high_avg += 1
+        else:
+            continue
+
+    percent = (high_avg / student) * 100   # 비율 구하기
+    print("%.3f" % percent + "%")
