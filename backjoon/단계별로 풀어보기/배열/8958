@@ -1,0 +1,17 @@
+num = int(input())
+
+for i in range(num):
+    result = 0
+    score = 0
+    score_list = []
+    a = list(input())
+
+    for j in range(len(a)):
+        if a[j] == "O":
+            score += 1
+            score_list.append(score)
+        elif a[j] == "X":
+            score = 0
+
+    result = sum(score_list)
+    print(result)
