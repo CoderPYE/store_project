@@ -1,0 +1,7 @@
+import sys
+
+num = int(input())
+num_list = list(map(int, sys.stdin.readline().rstrip()))
+
+sum_num = sum(num_list)
+print(sum_num)
