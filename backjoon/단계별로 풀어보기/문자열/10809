@@ -1,0 +1,5 @@
+word = input()
+str_alp = "abcdefghijklmnopqrstuvwxyz"
+
+for i in str_alp:
+    print(word.find(i), end=" ")
