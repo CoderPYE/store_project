@@ -1,0 +1,13 @@
+import sys
+num = int(input())   # 전체 횟수
+
+for i in range(num):
+    make_list = list(map(str, sys.stdin.readline().rstrip()))   # 반복할 숫자, 문자열 입력받기
+    num2 = int(make_list[0])   # 반복할 숫자만 따로 저장
+    del make_list[0]   # 문자열만 남기고 숫자는 제거
+    make_list = ' '.join(make_list).split()   # 맨앞에 남아있는 공백 제거
+
+    make_str = ""
+    for j in range(len(make_list)):
+        make_str += make_list[j] * num2   # 반복해서 출력
+    print(make_str)
